@@ -4,6 +4,7 @@
     </head>
     <body>
         <h1>Contact form</h1>
+        <form action="">
         <p>
             Name:<br>
         <input type="text"name="username"size=5 maxlength="7">
@@ -14,12 +15,29 @@
     </p>
     <p>
         Subject:<br>
-        <input type="text"name="Subject">
+        <input type="text"name="subject">
+    </p>
+    <p>
+        Is this a<br>
+        <input type="radio"name="request_type">Sales request
+        <input type="radio"name="request_type">Support request
+    </p>
+    <p>
+        My hobbies are<br>
+        <input type="checkbox"name="hobbies[]"value="photography">photography
+        <input type="checkbox"name="hobbies[]"value="reading comics">reading comics
+        <input type="checkbox"name="hobbies[]"value="dance">dance
+        <input type="checkbox"name="hobbies[]"value="music">music
+        
     </p>
     <p>
         Message:<br>
         <textarea name="Message"rows="5"cols="35"placeholder="Enter your message"></textarea>
     </p>
+    <p>
+        <input type="submit"name="submit"value="send">
+    </p>
+</form>
     </body>
 
 </html>
